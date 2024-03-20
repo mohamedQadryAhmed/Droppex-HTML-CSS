@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Droppex</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+      body {
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        display: flex;
+        background-color: #1e1e1e;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 900px;
+        background-color: #121212;
+        gap: 40px;
+      }
+
+      nav .title {
+        display: flex;
+        gap: 8px;
+        padding-top: 40px;
+        padding-left: 40px;
+        color: #57acdc;
+      }
+
+      nav .title img {
+        padding-top: 5px;
+      }
+
+      .header {
+        border-bottom: #1E1E1E 1px solid;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 10px;
+      }
+
+      .btn-add-folder {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        background-color: #57acdc;
+        width: 128px;
+        height: 44px;
+        border-radius: 55px;
+        color: #ffff;
+        margin-left: 40px;
+        align-items: center;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      .home-tab {
+        color: #57acdc;
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        padding-right: 40px;
+      }
+
+      .home-tab::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 7px;
+        height: 32px;
+        background-color: #57acdc;
+        border-radius: 0 10px 10px 0;
+        
+      }
+
+      .trash-tab {
+        color:  #939393;
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        padding-right: 40px;
+      }
+      .storage-tab {
+        color:  #939393;
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        padding-right: 40px;
+      }
+
+    .storage-card {
+        width: 170px;
+        height: 201px;
+        background-color: #1E1E1E;
+        border-radius: 10px;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .progress {
+      width: 126px;
+      height: 126px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: conic-gradient(#57acdc 35deg , #121212 0deg);
+    }
+
+    .progress .inner {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color:#1E1E1E;
+    }
+
+    .progress > span {
+      position: relative;
+      font-size: 18px;
+      font-family: 'Quicksand';
+      font-weight: 700;
+      color: #57acdc;
+    }
+
+    .storage-space {
+      color:#939393;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+
+      
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="header">
+            <div class="title">
+                <img src="./Icon/box.png" alt="" width="24" height="24" />
+                <h1>Droppex</h1>
+              </div>
+      
+              <div class="btn-add-folder">
+                <div>
+                  <img src="./Icon/folder-add.png" alt="" width="20" height="20" />
+                </div>
+                New folder
+              </div>
+      
+              <div class="home-tab">
+                <div><img src="./Icon/category.png" alt="" /></div>
+                Home
+              </div>
+              <div class="trash-tab">
+                <div><img src="./Icon/trash.png" alt="" /></div>
+                Trash
+              </div>
+        </div>
+        <div class="storage-tab">
+          <div><img src="./Icon/cloud.png" alt="" /></div>
+          Storage
+        </div>
+
+        <div class="storage-card">
+            <div class="progress">
+              <div class="inner"></div>
+              <span>10%</span>
+            </div>
+
+            <div class="storage-space"><span>10GB / 100GB</span></div>
+        </div>
+        
+      </nav>
+      <section>
+        <div class="input-section">
+          <div>
+            <img src="./Icon/" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
